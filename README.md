@@ -1,5 +1,6 @@
 # CP
-Solutions for CP
+SOLUTIONS FOR CP
+
 Welcome to the Problem Solutions Repository! This repository contains solutions to a variety of algorithmic and programming problems, implemented in C++.
 
 Introduction
