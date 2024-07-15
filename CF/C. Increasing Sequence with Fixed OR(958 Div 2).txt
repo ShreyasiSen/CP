@@ -71,20 +71,6 @@ using namespace __gnu_pbds;
 #define ordered_set tree<ll, null_type,less<ll>, rb_tree_tag,tree_order_statistics_node_update>
 #define int long long
 
-const int N = 2e5 + 10;
-
-// Adjacency list where each element is a pair of (neighbor, edge index)
-vector<pair<int,int>>s[N];
-int ans;
- 
-void dfs(int vertex,int parent,int w=0){//indices of curr vertex and parent
-    ans=max(ans,w);
-    for(pair<int,int> i: s[vertex]){//traverse all neighbor of cur vertex
-        if(i.second!=parent)//no back traversal
-        dfs(i.first,i.second,w+(i.second<parent));// w increses if the current edge index is less than the parent's edge index
-    }
-}
- 
 void shreyasi() {
     int n;
     cin>>n;
